@@ -1,2 +1,0 @@
-# Among-Us-Cheats
-idk
