@@ -31,6 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button20 = new System.Windows.Forms.Button();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.button14 = new System.Windows.Forms.Button();
             this.textBox11 = new System.Windows.Forms.TextBox();
@@ -71,9 +77,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button19 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button18 = new System.Windows.Forms.Button();
@@ -96,12 +99,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label17 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -123,6 +124,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage1.Controls.Add(this.checkBox8);
+            this.tabPage1.Controls.Add(this.comboBox3);
+            this.tabPage1.Controls.Add(this.label19);
+            this.tabPage1.Controls.Add(this.button21);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.button20);
@@ -174,12 +179,80 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "The Skeld",
+            "MIRA HQ",
+            "Polus"});
+            this.comboBox2.Location = new System.Drawing.Point(465, 130);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 46;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.label18.ForeColor = System.Drawing.Color.Cyan;
+            this.label18.Location = new System.Drawing.Point(462, 160);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(76, 18);
+            this.label18.TabIndex = 45;
+            this.label18.Text = "Impostors";
+            // 
+            // button20
+            // 
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.ForeColor = System.Drawing.Color.Cyan;
+            this.button20.Location = new System.Drawing.Point(571, 187);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 23);
+            this.button20.TabIndex = 44;
+            this.button20.Text = "Apply";
+            this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(465, 187);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 23);
+            this.textBox17.TabIndex = 43;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.label17.ForeColor = System.Drawing.Color.Cyan;
+            this.label17.Location = new System.Drawing.Point(462, 104);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 18);
+            this.label17.TabIndex = 42;
+            this.label17.Text = "Map";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.Cyan;
+            this.button3.Location = new System.Drawing.Point(571, 131);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 41;
+            this.button3.Text = "Apply";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.label12.ForeColor = System.Drawing.Color.Cyan;
-            this.label12.Location = new System.Drawing.Point(240, 328);
+            this.label12.Location = new System.Drawing.Point(462, 48);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 18);
             this.label12.TabIndex = 39;
@@ -190,7 +263,7 @@
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.ForeColor = System.Drawing.Color.Cyan;
-            this.button14.Location = new System.Drawing.Point(349, 355);
+            this.button14.Location = new System.Drawing.Point(571, 75);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 23);
             this.button14.TabIndex = 38;
@@ -200,7 +273,7 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(243, 355);
+            this.textBox11.Location = new System.Drawing.Point(465, 75);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(100, 23);
@@ -211,7 +284,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
             this.label11.ForeColor = System.Drawing.Color.Cyan;
-            this.label11.Location = new System.Drawing.Point(240, 272);
+            this.label11.Location = new System.Drawing.Point(240, 328);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(83, 18);
             this.label11.TabIndex = 36;
@@ -222,7 +295,7 @@
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.ForeColor = System.Drawing.Color.Cyan;
-            this.button13.Location = new System.Drawing.Point(349, 299);
+            this.button13.Location = new System.Drawing.Point(349, 355);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 23);
             this.button13.TabIndex = 35;
@@ -232,7 +305,7 @@
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(243, 299);
+            this.textBox10.Location = new System.Drawing.Point(243, 355);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 23);
@@ -592,9 +665,6 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.tabPage2.Controls.Add(this.checkBox7);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.button19);
-            this.tabPage2.Controls.Add(this.textBox15);
             this.tabPage2.Controls.Add(this.checkBox6);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.button18);
@@ -627,38 +697,6 @@
             this.checkBox7.Text = "NoClip";
             this.checkBox7.UseVisualStyleBackColor = true;
             this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.label16.ForeColor = System.Drawing.Color.Cyan;
-            this.label16.Location = new System.Drawing.Point(24, 339);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(126, 18);
-            this.label16.TabIndex = 35;
-            this.label16.Text = "Items In Task List";
-            // 
-            // button19
-            // 
-            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.ForeColor = System.Drawing.Color.Cyan;
-            this.button19.Location = new System.Drawing.Point(133, 366);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 34;
-            this.button19.Text = "Apply";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(27, 366);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 23);
-            this.textBox15.TabIndex = 33;
             // 
             // checkBox6
             // 
@@ -905,73 +943,54 @@
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             this.backgroundWorker1.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker1_RunWorkerCompleted);
             // 
-            // label17
+            // label19
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.label17.ForeColor = System.Drawing.Color.Cyan;
-            this.label17.Location = new System.Drawing.Point(456, 48);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 18);
-            this.label17.TabIndex = 42;
-            this.label17.Text = "Map";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
+            this.label19.ForeColor = System.Drawing.Color.Cyan;
+            this.label19.Location = new System.Drawing.Point(240, 272);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(125, 18);
+            this.label19.TabIndex = 49;
+            this.label19.Text = "Task Bar Updates";
             // 
-            // button3
+            // button21
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Cyan;
-            this.button3.Location = new System.Drawing.Point(565, 75);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 41;
-            this.button3.Text = "Apply";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.ForeColor = System.Drawing.Color.Cyan;
+            this.button21.Location = new System.Drawing.Point(349, 299);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 48;
+            this.button21.Text = "Apply";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // label18
+            // comboBox3
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Bahnschrift", 11.25F);
-            this.label18.ForeColor = System.Drawing.Color.Cyan;
-            this.label18.Location = new System.Drawing.Point(456, 104);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(76, 18);
-            this.label18.TabIndex = 45;
-            this.label18.Text = "Impostors";
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Always",
+            "Meetings",
+            "Never"});
+            this.comboBox3.Location = new System.Drawing.Point(243, 299);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(100, 21);
+            this.comboBox3.TabIndex = 50;
             // 
-            // button20
+            // checkBox8
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(12)))));
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.ForeColor = System.Drawing.Color.Cyan;
-            this.button20.Location = new System.Drawing.Point(565, 131);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 23);
-            this.button20.TabIndex = 44;
-            this.button20.Text = "Apply";
-            this.button20.UseVisualStyleBackColor = false;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(459, 131);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 23);
-            this.textBox17.TabIndex = 43;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "The Skeld",
-            "MIRA HQ",
-            "Polus"});
-            this.comboBox2.Location = new System.Drawing.Point(459, 74);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 46;
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.Font = new System.Drawing.Font("Bahnschrift", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox8.ForeColor = System.Drawing.Color.Cyan;
+            this.checkBox8.Location = new System.Drawing.Point(465, 20);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(146, 22);
+            this.checkBox8.TabIndex = 51;
+            this.checkBox8.Text = "Anonymous Votes";
+            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox8.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // Form1
             // 
@@ -1062,9 +1081,6 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
@@ -1074,6 +1090,10 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.CheckBox checkBox8;
     }
 }
 

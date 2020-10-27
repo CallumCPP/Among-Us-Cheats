@@ -8,3 +8,17 @@ C:\Users\thecr\source\repos\Among Us Shit\Among Us Shit\obj\Debug\Among Us Shit.
 C:\Users\thecr\source\repos\Among Us Shit\Among Us Shit\obj\Debug\Among Us Shit.csproj.CoreCompileInputs.cache
 C:\Users\thecr\source\repos\Among Us Shit\Among Us Shit\obj\Debug\Among Us Shit.exe
 C:\Users\thecr\source\repos\Among Us Shit\Among Us Shit\obj\Debug\Among Us Shit.pdb
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\bin\Debug\Among Us Shit.exe.config
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\bin\Debug\Among Us Shit.exe
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\bin\Debug\Among Us Shit.pdb
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\bin\Debug\DiscordRPC.xml
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\bin\Debug\Newtonsoft.Json.xml
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.csprojAssemblyReference.cache
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among_Us_Shit.Form1.resources
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among_Us_Shit.Properties.Resources.resources
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.csproj.GenerateResource.cache
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.csproj.CoreCompileInputs.cache
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.csproj.Fody.CopyLocal.cache
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.csproj.CopyComplete
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.exe
+C:\Users\thecr\source\repos\Among-Us-Cheats\Among Us Shit\obj\Debug\Among Us Shit.pdb

@@ -23,7 +23,11 @@ namespace Among_Us_Shit
             InitializeComponent();
         }
 
-        private string gameSettingsPointer(string lastOffset) => Pointer_Bases.gameSettingsBase + lastOffset;
+        private string gameSettingsPointer(int lastOffset)
+        {
+            int offset = lastOffset + Last_Offset_Bases.gameSettingsOffset;
+            return Pointer_Bases.gameSettingsBase + Convert.ToString(offset, 16).ToUpper();
+        }
 
         private bool _dragging = false;
         private Point _start_point = new Point(0, 0);
@@ -110,11 +114,11 @@ namespace Among_Us_Shit
             {
                 if (checkBox1.Checked)
                 {
-                    m.WriteMemory(gameSettingsPointer("4C"), "byte", "1");
+                    m.WriteMemory(gameSettingsPointer(0x4C), "byte", "1");
                 }
                 else if (!checkBox1.Checked)
                 {
-                    m.WriteMemory(gameSettingsPointer("4C"), "byte", "0");
+                    m.WriteMemory(gameSettingsPointer(0x4C), "byte", "0");
                 }
             }
             catch { }
@@ -126,11 +130,11 @@ namespace Among_Us_Shit
             {
                 if (checkBox2.Checked)
                 {
-                    m.WriteMemory(gameSettingsPointer("4D"), "byte", "1");
+                    m.WriteMemory(gameSettingsPointer(0x4D), "byte", "1");
                 }
                 else if (!checkBox2.Checked)
                 {
-                    m.WriteMemory(gameSettingsPointer("4D"), "byte", "0");
+                    m.WriteMemory(gameSettingsPointer(0x4D), "byte", "0");
                 }
             }
             catch { }
@@ -140,7 +144,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("30"), "int", textBox1.Text);
+                m.WriteMemory(gameSettingsPointer(0x30), "int", textBox1.Text);
             }
             catch { }
         }
@@ -149,7 +153,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("34"), "int", textBox2.Text);
+                m.WriteMemory(gameSettingsPointer(0x34), "int", textBox2.Text);
             }
             catch { }
         }
@@ -158,7 +162,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("44"), "int", textBox3.Text);
+                m.WriteMemory(gameSettingsPointer(0x44), "int", textBox3.Text);
             }
             catch { }
         }
@@ -167,7 +171,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("48"), "int", textBox4.Text);
+                m.WriteMemory(gameSettingsPointer(0x48), "int", textBox4.Text);
             }
             catch { }
         }
@@ -176,7 +180,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("14"), "float", textBox5.Text);
+                m.WriteMemory(gameSettingsPointer(0x14), "float", textBox5.Text);
             }
             catch { }
         }
@@ -185,7 +189,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("18"), "float", textBox6.Text);
+                m.WriteMemory(gameSettingsPointer(0x18), "float", textBox6.Text);
             }
             catch { }
         }
@@ -194,7 +198,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("1C"), "float", textBox7.Text);
+                m.WriteMemory(gameSettingsPointer(0x1C), "float", textBox7.Text);
             }
             catch { }
         }
@@ -203,7 +207,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("20"), "float", textBox8.Text);
+                m.WriteMemory(gameSettingsPointer(0x20), "float", textBox8.Text);
             }
             catch { }
         }
@@ -214,17 +218,17 @@ namespace Among_Us_Shit
             {
                 if (comboBox1.Text == "Short")
                 {
-                    m.WriteMemory(gameSettingsPointer("40"), "int", "0");
+                    m.WriteMemory(gameSettingsPointer(0x40), "int", "0");
                 }
 
                 else if (comboBox1.Text == "Normal")
                 {
-                    m.WriteMemory(gameSettingsPointer("40"), "int", "1");
+                    m.WriteMemory(gameSettingsPointer(0x40), "int", "1");
                 }
 
                 else if (comboBox1.Text == "Long")
                 {
-                    m.WriteMemory(gameSettingsPointer("40"), "int", "2");
+                    m.WriteMemory(gameSettingsPointer(0x40), "int", "2");
                 }
             }
             catch { }
@@ -234,7 +238,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("24"), "int", textBox9.Text);
+                m.WriteMemory(gameSettingsPointer(0x24), "int", textBox9.Text);
             }
             catch { }
         }
@@ -243,7 +247,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("28"), "int", textBox10.Text);
+                m.WriteMemory(gameSettingsPointer(0x28), "int", textBox10.Text);
             }
             catch { }
         }
@@ -252,7 +256,7 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("2C"), "int", textBox11.Text);
+                m.WriteMemory(gameSettingsPointer(0x2C), "int", textBox11.Text);
             }
             catch { }
         }
@@ -380,17 +384,17 @@ namespace Among_Us_Shit
             {
                 if (comboBox2.Text == "The Skeld")
                 {
-                    m.WriteMemory(gameSettingsPointer("10"), "int", "0");
+                    m.WriteMemory(gameSettingsPointer(0x10), "int", "0");
                 }
 
                 else if (comboBox2.Text == "MIRA HQ")
                 {
-                    m.WriteMemory(gameSettingsPointer("10"), "int", "1");
+                    m.WriteMemory(gameSettingsPointer(0x10), "int", "1");
                 }
 
                 else if (comboBox2.Text == "Polus")
                 {
-                    m.WriteMemory(gameSettingsPointer("10"), "int", "2");
+                    m.WriteMemory(gameSettingsPointer(0x10), "int", "2");
                 }
             }
             catch { }
@@ -400,9 +404,52 @@ namespace Among_Us_Shit
         {
             try
             {
-                m.WriteMemory(gameSettingsPointer("38"), "int", textBox17.Text);
+                m.WriteMemory(gameSettingsPointer(0x38), "int", textBox17.Text);
             }
             catch { }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (comboBox3.Text == "Always")
+                {
+                    m.WriteMemory(gameSettingsPointer(0x50), "byte", "0");
+                }
+
+                else if (comboBox3.Text == "Meetings")
+                {
+                    m.WriteMemory(gameSettingsPointer(0x50), "byte", "1");
+                }
+
+                else if (comboBox3.Text == "Never")
+                {
+                    m.WriteMemory(gameSettingsPointer(0x50), "byte", "2");
+                }
+            }
+            catch { }
+        }
+
+        private void checkBox8_CheckedChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (checkBox8.Checked)
+                {
+                    m.WriteMemory(gameSettingsPointer(0x4E), "byte", "1");
+                }
+                else if (!checkBox8.Checked)
+                {
+                    m.WriteMemory(gameSettingsPointer(0x4E), "byte", "0");
+                }
+            }
+            catch { }
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
